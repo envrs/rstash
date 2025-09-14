@@ -1,5 +1,6 @@
 # Devcontainer Dockerfile for Rust development
-FROM mcr.microsoft.com/devcontainers/rust:latest
+# Using a specific version for reproducibility, e.g., 1-bullseye. Check for the latest stable version.
+FROM mcr.microsoft.com/devcontainers/rust:1-bullseye
 
 # Install additional packages if needed
 RUN apt-get update && \
