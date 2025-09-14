@@ -5,7 +5,7 @@
             "name": "Debug Rust executable",
             "type": "lldb",
             "request": "launch",
-            "program": "${workspaceFolder}/target/debug/${workspaceFolderBasename}",
+            "program": "${workspaceFolder}/target/debug/${input:executableName}",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopOnEntry": false,
