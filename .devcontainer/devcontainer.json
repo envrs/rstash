@@ -1,0 +1,15 @@
+{
+  "name": "Rust Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "rust-lang.rust-analyzer",
+    "ms-vscode.cpptools"
+  ],
+  "forwardPorts": [8000, 8080],
+  "postCreateCommand": "cargo build"
+}
